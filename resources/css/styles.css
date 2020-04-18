@@ -1,0 +1,291 @@
+/* /--------reuseable------------- */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Lato',sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.clearfix::after{
+    display: block;
+    content: " ";
+    clear: both;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: peru;
+    padding:  15px 30px;
+    border-radius: 20px;
+    display: inline-block; 
+    text-align: center;
+    width : 280px;
+    transition: all .3s;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.btn:hover,
+.btn:active{
+    background-color: red;
+}
+.logo{
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 55%;
+}
+
+header{
+    background-color: red;
+    /* background-image: linear-gradient(45deg, rgba(121, 136, 151, 0.4),rgb(45,95,93,0.5)), url("../img/anhnen1.jpg"); */
+    background-image: url(../img/anhnen1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position-y: 80%;
+}
+/* --------main-nav---------- */
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-right: 70px; 
+    margin-top: 50px;
+}
+.main-nav li{
+    display: inline;
+    margin-left: 20px;
+}
+.main-nav li a {
+    text-decoration: none;
+    font-size: 110%;
+    font-weight: 700;
+    transition: border-bottom 0.5s;
+    padding: 3px 0;
+    color: rgb(68, 51, 51);
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid;
+}
+/* ---------------------------------------- */
+/* --------about-------------------------- */
+h2{
+    color: #e67e22;
+    font-size: 180%;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+h2::after{
+    content: " ";
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: rgba(243, 179, 124,0.5);
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.p-long{
+    text-align:  center;
+    color: #265077;
+    font-size: 22px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 15%;
+    line-height: 140%;
+}
+.about-image img{
+    margin-left: 5%;
+    width: 420px;
+    border-radius: 10px;
+    height: 350px;
+}
+.fix{
+    margin-left: 5%;
+}
+
+.picture-title{
+    margin-left: 40%;
+    color:#fccd04;
+    
+}
+/* ----------------------------------- */
+/* -----------activities--------------- */
+.about-image1 img{
+    margin-top: 50px;
+    margin-left: 10%;
+    width: 90%;
+    border-radius: 10px;
+    height: 220px;
+}
+.activities{
+    margin-top: 40px;
+    background-color: #85dcb8;
+}
+.activities{
+    background-image: linear-gradient(60deg , rgba(121, 136, 151, 0.8),rgb(45,95,93,0.9) ) ,url(../img/Anhnen2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position-y: 100%;
+}
+/* -------------------------------------------- */
+/* ------human-of--class------------------------- */
+.picture-title-human{
+    text-align: center;
+    color: red;
+    font-weight: 500;
+    font-size: 80%;
+}
+.about-image2 img{
+    margin-left: 10%;
+    width: 90%;
+    border-radius: 10px;
+    height: 270px;
+}
+h3{
+    color: #c3073f;
+    font-size: 180%;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+.human-of-class{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+/* ---------------------------------------------------- */
+/*---------------------SAY-----------------------------*/
+.img-say{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border : 2px solid #265077;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 20px;
+}
+.say-about h2{
+    margin-bottom: 50px;
+}
+.say-about{
+    background-image:linear-gradient(45deg, rgba(2,33,64,0.5),rgb(45,95,93,0.45)), url(../img/nen_say.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 20px;
+}
+blockquote{
+    position: relative;
+    width: 95%;
+    font-style: italic;
+    line-height: 140%;
+    color:white;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+blockquote::before{
+    content:"\201C";
+    display: block;
+    font-size: 400%;
+    position: absolute;
+    top: -10px;
+    left: -5px;
+}
+cite{
+    color: rgb(212, 102, 163);
+    display: block;
+}
+.fix-say{
+    margin-top: 55px;
+}
+/* ---------------------------- */
+/* ----------CONTACT------------------ */
+.contact{
+    margin-top: 100px;
+    height: 500px;
+    background-image: url(../img/background5.jpeg); 
+    background-size: cover;
+    background-position: center;
+}
+form{
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-left: 40%;
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+label{
+    color: wheat;
+    word-spacing: 1px;
+    font-size: 130%;
+    font-weight: 500;
+}
+input,textarea{
+    outline: none;
+    border-radius: 10px;
+    background-color: rgba(31, 30, 30, 0.3);
+    border: 1px solid rgba(146, 142, 142, 0.8);
+    width: 300px;
+}
+input{
+    height: 65px;
+}
+textarea{
+    height: 100px;
+}
+input[type=text] , textarea{
+    font-size: 100%;
+    color: white;
+    font-weight: 500;
+}
+input[type=text]:focus , textarea:focus{
+    color: white;
+    background-color: rgba(78, 111, 138, 0.8);
+}
+.row .btn{
+    margin-left: 25%;
+}
+.information{
+    color: white;
+    margin-top: 50px;
+    font-size: 100%;
+}
+.social-icons li{
+    margin-top: 15px;
+     display: inline-block;
+     font-size: 250% ;
+     color: white;
+     margin-left: 10px;
+     cursor: pointer;
+}
+.social-icons li i:hover,
+.social-icons li i:active{
+    transform: scale(1.5);
+    color: yellow;
+}
+.row ul li{
+    margin-top: 20px;
+    font-weight: 600;
+}
